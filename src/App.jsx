@@ -1,5 +1,5 @@
 import Home from "./Home";
-import Modal from "./components/Modal";
+import Modal from "./Modal";
 import Sidebar from "./components/Sidebar";
 
 const App = () => {

@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../images/logo.svg";
 import { FaTimes } from "react-icons/fa";
 import { social, links } from "../data";
