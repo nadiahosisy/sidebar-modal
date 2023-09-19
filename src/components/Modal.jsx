@@ -1,8 +1,16 @@
-import React from "react";
 import { FaTimes } from "react-icons/fa";
+import { useGlobalContext } from "../hooks/useGlobalContext";
 
 const Modal = () => {
-  return <h2>Modal</h2>;
+  const { isModal, closeModal } = useGlobalContext();
+  return (
+    <div className="modal-overlay">
+      <div className="modal-container">
+        <h3>modal content</h3>
+        <button className="close-modal-btn" onClick={closeModal}></button>
+      </div>
+    </div>
+  );
 };
 
 export default Modal;
