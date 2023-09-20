@@ -1,4 +1,4 @@
-import { useGlobalContext } from "./hooks/useGlobalContext";
+import { useGlobalContext } from "../hooks/useGlobalContext";
 import { FaBars } from "react-icons/fa";
 
 const Home = () => {

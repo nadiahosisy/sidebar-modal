@@ -1,12 +1,12 @@
-import logo from "./images/logo.svg";
-import { FaTimes } from "react-icons/fa";
+import logo from "../images/logo.svg";
 import { social, links } from "./data";
-import { useGlobalContext } from "./hooks/useGlobalContext";
+import { FaTimes } from "react-icons/fa";
+import { useGlobalContext } from "../hooks/useGlobalContext";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
   return (
-    <aside className="sidebar">
+    <aside className={isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}>
       <div className="sidebar-header">
         <img src={logo} alt="coding addict" className="logo" />
         <button className="close-btn" onClick={closeSidebar}>
@@ -39,5 +39,4 @@ const Sidebar = () => {
     </aside>
   );
 };
-
 export default Sidebar;

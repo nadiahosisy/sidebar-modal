@@ -1,6 +1,5 @@
-import { useGlobalContext } from "./hooks/useGlobalContext";
 import { FaTimes } from "react-icons/fa";
-
+import { useGlobalContext } from "../hooks/useGlobalContext";
 const Modal = () => {
   const { isModalOpen, closeModal } = useGlobalContext();
   return (
@@ -14,5 +13,4 @@ const Modal = () => {
     </div>
   );
 };
-
 export default Modal;
